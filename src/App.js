@@ -9,6 +9,8 @@ import {
   CircleDot, Hexagon, Triangle, Square, Diamond, Pentagon, Octagon
 } from 'lucide-react';
 
+import sulemanPic  from "../src/assets/suleman.jpeg";
+
 // ==================== YOUR CV DATA ====================
 const personalInfo = {
   name: "Muhammad Suleman",
@@ -836,7 +838,8 @@ function App() {
                 {/* Main Profile Image */}
                 <div className="absolute inset-8 rounded-full overflow-hidden border-2 border-ai-cyan/30 animate-morph">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                    // src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                    src={sulemanPic}
                     alt="Muhammad Suleman"
                     className="w-full h-full object-cover"
                   />
