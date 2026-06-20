@@ -99,7 +99,7 @@ const projects = [
     tags: ["React.js", "Node.js", "Redis", "BullMQ", "PostgreSQL", "Microservices"],
     image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop",
     github: "#",
-    live: "#",
+    live: "https://gamora.pk/",
     featured: true,
     category: "Full Stack"
   },
@@ -110,7 +110,7 @@ const projects = [
     tags: ["React.js", "Redux Toolkit", "Node.js", "PostgreSQL", "LangChain", "AI"],
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
     github: "#",
-    live: "#",
+    live: "https://researchpal.co/",
     featured: true,
     category: "AI"
   },
@@ -121,7 +121,7 @@ const projects = [
     tags: ["React.js", "Node.js", "Redis", "Microservices", "Pub/Sub", "Real-time"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
     github: "#",
-    live: "#",
+    live: "https://managekaro.org/",
     featured: true,
     category: "Full Stack"
   }
@@ -414,10 +414,10 @@ const ProjectCard3D = ({ project, index }) => {
           <div className={`absolute inset-0 bg-ai-cyan/10 flex items-center justify-center gap-4 transition-opacity duration-300 ${
             isHovered ? 'opacity-100' : 'opacity-0'
           }`}>
-            <a href={project.github} className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-ai-cyan/20 transition-all hover:scale-110">
+            {/* <a href={project.github} className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-ai-cyan/20 transition-all hover:scale-110">
               <Github className="w-5 h-5 text-white" />
-            </a>
-            <a href={project.live} className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-ai-cyan/20 transition-all hover:scale-110">
+            </a> */}
+            <a href={project.live} target="_blank" className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-ai-cyan/20 transition-all hover:scale-110">
               <ExternalLink className="w-5 h-5 text-white" />
             </a>
           </div>
@@ -737,10 +737,18 @@ function App() {
                 View My Work
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="group border border-ai-border hover:border-ai-cyan text-ai-text px-8 py-4 rounded-xl font-semibold transition-all hover:bg-ai-cyan/5 flex items-center justify-center gap-2">
+              {/* <button className="group border border-ai-border hover:border-ai-cyan text-ai-text px-8 py-4 rounded-xl font-semibold transition-all hover:bg-ai-cyan/5 flex items-center justify-center gap-2">
                 <Download className="w-5 h-5" />
                 Download CV
-              </button>
+              </button> */}
+              <a 
+href="/Suleman_resume_r.pdf" 
+  download="Muhammad_Suleman_CV.pdf"
+  className="group border border-ai-border hover:border-ai-cyan text-ai-text px-8 py-4 rounded-xl font-semibold transition-all hover:bg-ai-cyan/5 flex items-center justify-center gap-2"
+>
+  <Download className="w-5 h-5" />
+  Download CV
+</a>
             </div>
 
             {/* Stats with Animated Counters */}
