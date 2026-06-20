@@ -417,7 +417,7 @@ const ProjectCard3D = ({ project, index }) => {
             {/* <a href={project.github} className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-ai-cyan/20 transition-all hover:scale-110">
               <Github className="w-5 h-5 text-white" />
             </a> */}
-            <a href={project.live} target="_blank" className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-ai-cyan/20 transition-all hover:scale-110">
+            <a href={project.live} target="_blank" rel="noreferrer" className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-ai-cyan/20 transition-all hover:scale-110">
               <ExternalLink className="w-5 h-5 text-white" />
             </a>
           </div>
